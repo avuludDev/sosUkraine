@@ -1,2 +1,2 @@
 # sosUkraine
-DIMa
+DIM

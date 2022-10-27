@@ -722,10 +722,26 @@ text_of_top = document.getElementById('text1')
 text_of_bot = document.getElementById('text2')
 
 girl1.onclick = function(){change_text('g1')};
+girl2.onclick = function(){change_text('g2')};
+girl3.onclick = function(){change_text('g3')};
+girl4.onclick = function(){change_text('g4')};
+girl5.onclick = function(){change_text('g5')};
 
 function change_text(param){
 	if (param == 'g1'){
-		text_of_bot.innerTEXT = '';
-		text_of_top.innerTEXT = words['girl1']
+		text_of_bot.innerHTML = ''
+		text_of_top.innerHTML = words['girl1']
+	}else if(param=='g2'){
+		text_of_bot.innerHTML = ''
+		text_of_top.innerHTML = words['girl2']
+	}else if(param=='g3'){
+		text_of_bot.innerHTML = ''
+		text_of_top.innerHTML = words['girl3']
+	}else if(param=='g4'){
+		text_of_bot.innerHTML = ''
+		text_of_top.innerHTML = words['girl4']
+	}else if(param=='g5'){
+		text_of_bot.innerHTML = ''
+		text_of_top.innerHTML = words['girl5']
 	}
 }

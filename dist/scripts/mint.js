@@ -823,3 +823,4 @@ function overm(param){
 	
 }
 
+change_text('g1');

@@ -704,3 +704,25 @@ function hidespider(){
 	elem.style = 'display: none;';
 	elem.style = 'z-index: -1;';
 }
+
+const words = {
+	'girl1': 'Text1',
+	'girl2': 'Text2',
+	'girl3': 'Text3',
+	'girl4': 'Text4',
+	'girl5': 'Text5',
+}
+
+girl1 = document.getElementById('girl1')
+girl2 = document.getElementById('girl2')
+girl3 = document.getElementById('girl3')
+girl4 = document.getElementById('girl4')
+girl5 = document.getElementById('girl5')
+
+girl1.onclick = function(){myScript};
+
+function change_text(param){
+	if (param == 'g1'){
+		girl1.in
+	}
+}

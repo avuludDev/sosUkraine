@@ -1,0 +1,25 @@
+:root {
+	--pading-top: 14rem;
+	--hover-transition: all .3s ease-in-out;
+	--text-line: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	--main: #1a1a1a;
+	--main-bg: #f4f4f4;
+	--primary: #ffd500;
+	--secondary: #055eff;
+	--black: #000;
+	--white: #fff;
+	--container-width: 130rem;
+	@media (max-width: 1440px) {
+		--container-width: 127rem;
+	}
+	@media (max-width: 1364px) {
+		--container-width: 115rem;
+	}
+	@media (max-width: 1023px) {
+		--container-width: 80rem;
+	}
+	@media (max-width: 767px) {
+		--container-width: 500px;
+		--pading-top: 9.5rem;
+	}
+}

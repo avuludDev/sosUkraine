@@ -1,0 +1,128 @@
+<!-- donate -->
+<section id="second-page" class="section donate-section fp-auto-height">
+    <div class="container">
+      
+       <div class="donate section__content">
+         <div class="donate__dots-bg donate__dots-bg_1">
+           <img src="@donate/dots-bg.png" alt="bg">
+         </div>
+         <div class="donate__dots-bg donate__dots-bg_2">
+           <img src="@donate/dots-bg.png" alt="bg">
+         </div>
+         <!-- Slider main container -->
+         <div class="swiper donate-slider">
+           <!-- Additional required wrapper -->
+           <div class="swiper-wrapper">
+             <!-- Slides -->
+             <div class="swiper-slide">
+               <div class="donate-card-wrap">
+                 <div class="donate-card">
+                   <div class="donate-card__img">
+                     <img src="@donate/donate-woman.png" alt="logo">
+                   </div>
+                   <div class="donate-card__info">
+                     <div class="donate-card__top">
+                       <div class="donate-card__part">
+                         <div class="donate-card__title">
+                           Amount
+                         </div>
+                         <div class="donate-card-amount amount-block">
+                           <button id="decrease" class="donate-card__btn" style="opacity: 0.4;">-</button>
+                           <input value="1" readonly="" id="amountValue" class="number">
+                           <button id="increase" class="donate-card__btn">+</button>
+                         </div>
+                       </div>
+                       <div class="donate-card__part">
+                         <div class="donate-card__title">
+                           Available
+                         </div>
+                         <div class="donate-card__available number">
+                           <span id="amount_of_sum_mint">555</span> / <em>10000</em>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="donate-card__bottom">
+                       <div class="donate-card__part">
+                         <div class="donate-card__title">
+                           Total
+                         </div>
+                         <div class="donate-card__total number">
+                           <span id="amountPrice"></span> ETH
+                         </div>
+                       </div>
+                       <div class="donate-card__part">
+                         <a onclick="choser()" class="btn donate-card__donate-btn">
+                           <span>DONATE</span>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="swiper-slide">
+               <div class="donate-slider__content">
+                 <div class="donate-slider__text">
+                   <p>The total issue is 10,000 NFTs. Each token is a completely unique and self-sufficient illustration of the main goal of what is happening - People. People who are trying with all their might to bring peace into their lives, to return their homes and loved ones.</p>
+                   <p>The collection is generative and consists of 8 attributes, each of which has an average of 15 display options</p>
+                   <img src="@donate/dots-mob.png" alt="dots" class="donate-slider__text-dots">
+                 </div>
+                 <div class="donate-slider__img">
+                   <img src="@donate/donate-m-1.png" alt="people">
+                 </div>
+               </div>
+             </div>
+             <div class="swiper-slide">
+               <div class="donate-slider__content">
+                 <div class="donate-slider__text">
+                   <h3>SOS: Ukrainian medic #1245</h3>
+                   <ul>
+                     <li><b>Background</b> - Block</li>
+                     <li><b>Clothes</b> - Windbreaker</li>
+                     <li><b>Face</b> - Patriotic mask</li>
+                     <li><b>Headstyle</b> - Strict hairstyle</li>
+                     <li><b>In hands</b> - Ukrainian love</li>
+                     <li><b>Patch</b> - No</li>
+                   </ul>
+                 </div>
+                 <div class="donate-slider__img">
+                   <img src="@donate/donate-m-2.png" alt="people">
+                 </div>
+               </div>
+             </div>
+           </div>
+           <!-- If we need pagination -->
+           <div class="swiper-pagination"></div>
+
+         </div>
+         <div class="donate__bg-wrap">
+           <img src="@donate/donate-bg.png" alt="bg" class="donate__bg">
+           <div class="donate__peoples-wrap">
+             <div class="donate__text">
+               <img src="@donate/dots.png" alt="dots" class="donate__dots">
+               <p>The total issue is 10,000 NFTs. Each token is a completely unique and self-sufficient illustration of the main goal of what is happening - People. People who are trying with all their might to bring peace into their lives, to return their homes and loved ones.</p>
+               <p>The collection is generative and consists of 8 attributes, each of which has an average of 15 display options</p>
+             </div>
+             <img src="@donate/girl1.svg" alt="dots" id="girl1" class="donate__peoples">
+             <img src="@donate/girl2.svg" alt="dots" id="girl2" class="donate__peoples">
+             <img src="@donate/girl3.svg" alt="dots" id="girl3" class="donate__peoples">
+             <img src="@donate/girl4.svg" alt="dots" id="girl4" class="donate__peoples">
+             <img src="@donate/girl5.svg" alt="dots" id="girl5" class="donate__peoples">
+           </div>
+         </div>
+         <!--show slider arrow-->
+         <div class="scroll-bottom scroll-bottom_mob scroll-bottom_rotate slider-arrow slider-show-arrow">
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <g clip-path="url(#clip0_1049_50)">
+               <path d="M0.398923 3.83852L0.398937 3.8385C0.797333 3.44011 1.44344 3.44008 1.84207 3.83852L7.92924 9.92605L7.99995 9.99676L8.07067 9.92605L14.1579 3.83873C14.5565 3.44029 15.2025 3.44032 15.6009 3.83871L15.6009 3.83875C15.9996 4.23714 15.9997 4.88333 15.6009 5.28192L15.6009 5.28194L8.72136 12.1616C8.72136 12.1616 8.72135 12.1616 8.72134 12.1616C8.52213 12.3607 8.26119 12.4601 7.99996 12.4601C7.73865 12.4601 7.47769 12.3604 7.27856 12.1614L0.398937 5.28172C0.000346418 4.88313 0.000367015 4.23691 0.398923 3.83852Z" fill="white" stroke="#151513" stroke-width="0.2"/>
+             </g>
+             <defs>
+               <clipPath id="clip0_1049_50">
+                 <rect width="16" height="16" fill="white"/>
+               </clipPath>
+             </defs>
+           </svg>
+         </div>
+       </div>
+    </div>
+</section>

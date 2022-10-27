@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+	@@include('common/head/head.html')
+	<body class="overflow-hidden">
+
+	<div class="app">
+
+			<!-- BEMGO:symbol -->
+		@@include( 'sections/preloader/preloader.html' )
+		@@include( 'common/header/header.html' )
+
+		<div class="scroll-wrap" id="scroll-bottom-btn">
+			<a data-menuanchor="secondPage" href="#secondPage" class="scroll-bottom">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+					<g clip-path="url(#clip0_1049_50)">
+						<path d="M0.398923 3.83852L0.398937 3.8385C0.797333 3.44011 1.44344 3.44008 1.84207 3.83852L7.92924 9.92605L7.99995 9.99676L8.07067 9.92605L14.1579 3.83873C14.5565 3.44029 15.2025 3.44032 15.6009 3.83871L15.6009 3.83875C15.9996 4.23714 15.9997 4.88333 15.6009 5.28192L15.6009 5.28194L8.72136 12.1616C8.72136 12.1616 8.72135 12.1616 8.72134 12.1616C8.52213 12.3607 8.26119 12.4601 7.99996 12.4601C7.73865 12.4601 7.47769 12.3604 7.27856 12.1614L0.398937 5.28172C0.000346418 4.88313 0.000367015 4.23691 0.398923 3.83852Z" fill="white" stroke="#151513" stroke-width="0.2"/>
+					</g>
+					<defs>
+						<clipPath id="clip0_1049_50">
+							<rect width="16" height="16" fill="white"/>
+						</clipPath>
+					</defs>
+				</svg>
+			</a>
+		</div>
+
+			<div class="lines">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<main class="content" id="fullpage">
+
+					@@include( 'sections/intro/intro.html' )
+					@@include( 'sections/donate/donate.html' )
+					@@include( 'sections/ukrainians/ukrainians.html' )
+					@@include( 'sections/gallery/gallery.html' )
+
+			</main>
+
+		</div>
+		<!-- BEMGO:scripts -->
+	</body>
+</html>

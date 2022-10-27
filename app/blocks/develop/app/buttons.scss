@@ -1,0 +1,133 @@
+.btn {
+	position: relative;
+
+	span {
+		display: block;
+		position: relative;
+		z-index: 2;
+		font-size: 1.6rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		background: var(--white);
+		font-family: sans-serif;
+		border: 2px solid var(--black);
+		color: var(--black);
+		border-radius: 1.6rem;
+		padding: 1.5rem 4.5rem;
+		transition: var(--hover-transition);
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -.5rem;
+		left: 2.5rem;
+		right: 2.5rem;
+		border-radius: 8rem;
+		height: 2rem;
+		z-index: 1;
+		opacity: 0;
+		background: var(--secondary);
+		transition: var(--hover-transition);
+	}
+
+	@media (min-width: 768px) {
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+
+	&:active {
+		&::before {
+			background: #013DA9;
+		}
+
+		span {
+			background: var(--secondary);
+			color: var(--white);
+			border: 2px solid rgba(#000, 0.5);
+		}
+	}
+}
+
+//scroll buttons
+.scroll-wrap {
+	position: fixed;
+	bottom: 0;
+	z-index: 5;
+	//left: calc(50% - 15px);
+	left: calc(50% + 15px);
+	transform: translateX(-50%);
+	width: 100%;
+	padding: 0 15px;
+	max-width: var(--container-width);
+	@media (max-width: 767px) {
+		left: calc(50% + 12px);
+	}
+
+	&_donate {
+		left: calc(50% + 15px);
+		@media (max-width: 767px) {
+			left: calc(50% + 12px);
+			z-index: 2;
+		}
+	}
+}
+.scroll-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+	left: 0;
+	width: 4.8rem;
+	height: 5.6rem;
+	border-radius: 2.4rem 2.4rem 0 0;
+	background: var(--main);
+	transition: opacity, background .3s ease-in-out;
+	cursor: pointer;
+	&.hidden {
+		display: none;
+	}
+	@media (min-width: 768px) {
+		&:hover {
+			background: var(--secondary);
+		}
+	}
+
+	&_desk {
+		display: flex;
+		@media (max-width: 1023px) {
+			display: none;
+		}
+	}
+
+	svg {
+		width: 1.6rem;
+	}
+
+	&_mob {
+		display: none;
+		@media (max-width: 1023px) {
+			display: flex;
+			left: 15px;
+		}
+		@media (max-width: 767px) {
+			left: 12px;
+		}
+	}
+
+	&_rotate {
+		transform: rotate(-90deg);
+		left: auto;
+		right: 0;
+		height: 12rem;
+		align-items: flex-start;
+		padding-top: 1.2rem;
+
+		svg {
+			transform: scale(-1, 1);
+		}
+	}
+}

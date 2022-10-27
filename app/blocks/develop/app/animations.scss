@@ -1,0 +1,73 @@
+.fp-section.animated {
+	.intro__info-top {
+		transform: translateX(0);
+	}
+
+	.donate__bg-wrap {
+		transform: translate(0, 0);
+	}
+
+	.ukrainians__img {
+		transform: translateX(0) !important;
+	}
+
+	.gallery-slider .swiper-slide {
+		transform: translate(0, 0) !important;
+	}
+
+	.gallery__title {
+		opacity: 0;
+	}
+
+	.gallery-line {
+		&__part {
+			&:first-of-type {
+				transform: translate(-130%, 440%) rotate(-45deg);
+			}
+
+			&:last-of-type {
+				transform: translate(130%, -260%) rotate(45deg);
+			}
+		}
+	}
+}
+
+.header-wrap.animated {
+	.header__info {
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 767px) {
+	.fp-section {
+		.header-wrap {
+			transform: translateY(0);
+		}
+
+		.intro__info-top {
+			transform: translateX(0);
+		}
+
+		.donate__bg-wrap {
+			transform: translateX(0);
+		}
+
+		.ukrainians__img {
+			transform: translateX(0) !important;
+		}
+
+		.gallery-slider .swiper-slide {
+			transform: translate(0, 0) !important;
+			margin-right: 25px !important;
+		}
+
+		.gallery__title {
+			opacity: 1 !important;
+		}
+	}
+	.header-wrap {
+		.header__info {
+			transform: translateY(0);
+		}
+	}
+}

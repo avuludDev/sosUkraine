@@ -1,0 +1,17 @@
+@mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
+	$filepath: "../static/fonts/" + $file;
+	@font-face {
+		font-family: quote($style-name);
+		src: url($filepath + ".woff") format('woff'),
+		url($filepath + '.woff2') format('woff2'),
+		url($filepath + ".ttf") format('truetype');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+@include font-face('Futura PT Book', 'FuturaPT-Book', 400, normal);
+@include font-face('Futura PT Book', 'FuturaPT-Bold', 700, normal);
+@include font-face('Poppins', 'Poppins-Bold', 700, normal);
+@include font-face('Plus Jakarta Sans', 'PlusJakartaSans-Bold', 700, normal);
+@include font-face('Plus Jakarta Sans Bold', 'PlusJakartaSans-ExtraBold', 700, normal);

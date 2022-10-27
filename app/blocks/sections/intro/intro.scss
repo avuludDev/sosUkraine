@@ -1,0 +1,152 @@
+.intro {
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+	z-index: 4;
+	@media (max-width: 1023px) {
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+
+	&-section {
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__title {
+		margin-bottom: 4rem;
+		@media (max-width: 425px) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__info {
+		position: relative;
+		z-index: 2;
+		width: 64%;
+		padding-bottom: 20rem;
+		padding-right: 4rem;
+
+		&-top {
+			transform: translateX(-400%);
+			transition: transform .6s linear;
+		}
+
+		@media (max-width: 1023px) {
+			width: 100%;
+			padding-right: 0;
+			padding-bottom: 2rem;
+		}
+	}
+
+	&__images {
+		position: relative;
+		z-index: 2;
+		width: 36%;
+		pointer-events: none;
+
+		@media (max-width: 1023px) {
+			display: block;
+			width: 92%;
+			max-width: 390px;
+			left: -12px;
+		}
+
+		@media (min-width: 426px) and (max-width: 1023px) and (max-height: 719px) {
+			display: none;
+		}
+
+		img {
+			display: block;
+		}
+	}
+
+	&__desc {
+		display: flex;
+		align-items: center;
+		max-width: 68rem;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+		line-height: 1.15;
+		padding-left: 4rem;
+		@media (max-width: 767px) {
+			padding-left: 3rem;
+		}
+		@media (max-width: 425px) {
+			font-size: 1.7rem;
+			padding-left: 2rem;
+		}
+	}
+
+	&__img {
+		&_bg {
+			img {
+				width: 100%;
+			}
+		}
+
+		&_girls {
+			position: absolute;
+			bottom: 2rem;
+			width: 48rem;
+			left: calc(50% - 22rem);
+			transform: scale(1.12);
+			@media (max-width: 1023px) {
+				bottom: -1rem;
+				width: 80%;
+				left: 3rem;
+			}
+		}
+	}
+}
+
+.bottom-line .swiper-wrapper {
+	transition-timing-function: linear !important;
+	position: relative;
+}
+
+.bottom-line {
+	&-wrap {
+		position: absolute;
+		bottom: 7rem;
+		left: 0;
+		background-color: #FFD500;
+		padding: 1.25rem 0;
+		z-index: 3;
+		width: 100%;
+		@media (max-width: 425px) {
+			bottom: 5.8rem;
+			z-index: 5;
+		}
+	}
+
+	.title {
+		font-size: 1.8vw;
+		@media (max-width: 1919px){
+			font-size: 2.2vw;
+		}
+		@media (max-width: 1199px){
+			font-size: 3vw;
+		}
+		@media (max-width: 1023px){
+			font-size: 4vw;
+		}
+		@media (max-width: 767px){
+			font-size: 5vw;
+		}
+	}
+
+	.marquee {
+		&__item {
+			&:nth-of-type(n + 4) {
+				@media (max-width: 767px) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+

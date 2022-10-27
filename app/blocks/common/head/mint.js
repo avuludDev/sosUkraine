@@ -718,11 +718,14 @@ girl2 = document.getElementById('girl2')
 girl3 = document.getElementById('girl3')
 girl4 = document.getElementById('girl4')
 girl5 = document.getElementById('girl5')
+text_of_top = document.getElementById('text1')
+text_of_bot = document.getElementById('text2')
 
-girl1.onclick = function(){myScript};
+girl1.onclick = function(){change_text('g1')};
 
 function change_text(param){
 	if (param == 'g1'){
-		girl1.in
+		text_of_bot.innerTEXT = '';
+		text_of_top.innerTEXT = words['girl1']
 	}
 }

@@ -816,4 +816,4 @@ function overm(param){
 	
 }
 
-change_text('g1')
+change_text('g1');

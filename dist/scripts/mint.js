@@ -718,18 +718,27 @@ girl2 = document.getElementById('girl2')
 girl3 = document.getElementById('girl3')
 girl4 = document.getElementById('girl4')
 girl5 = document.getElementById('girl5')
+
+curent = 'girl1'
+
+g1 = document.getElementById('g1')
+g2 = document.getElementById('g2')
+g3 = document.getElementById('g3')
+g4 = document.getElementById('g4')
+g5 = document.getElementById('g5')
+
 text_of_top = document.getElementById('text1')
 text_of_bot = document.getElementById('text2')
 
-girl1.onclick = function(){change_text('g1')};
-girl2.onclick = function(){change_text('g2')};
-girl3.onclick = function(){change_text('g3')};
-girl4.onclick = function(){change_text('g4')};
-girl1.addEventListener('mouseover', change_text('g4'))
-girl5.onclick = function(){change_text('g5')};
+g1.onclick = function(){change_text('g4')};
+g2.onclick = function(){change_text('g3')};
+g3.onclick = function(){change_text('g1')};
+g4.onclick = function(){change_text('g2')};
+g5.onclick = function(){change_text('g5')};
 
 function change_text(param){
 	if (param == 'g1'){
+		curent = 'girl1'
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl1']
 		girl1.style.opacity = '1'
@@ -738,6 +747,7 @@ function change_text(param){
 		girl4.style.opacity = '0.5'
 		girl5.style.opacity = '0.5'
 	}else if(param=='g2'){
+		curent = 'girl2'
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl2']
 		girl1.style.opacity = '0.5'
@@ -746,6 +756,7 @@ function change_text(param){
 		girl4.style.opacity = '0.5'
 		girl5.style.opacity = '0.5'
 	}else if(param=='g3'){
+		curent = 'girl3'
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl3']
 		girl1.style.opacity = '0.5'
@@ -754,6 +765,7 @@ function change_text(param){
 		girl4.style.opacity = '0.5'
 		girl5.style.opacity = '0.5'
 	}else if(param=='g4'){
+		curent = 'girl4'
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl4']
 		girl1.style.opacity = '0.5'
@@ -762,6 +774,7 @@ function change_text(param){
 		girl4.style.opacity = '1'
 		girl5.style.opacity = '0.5'
 	}else if(param=='g5'){
+		curent = 'girl5'
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl5']
 		girl1.style.opacity = '0.5'
@@ -770,4 +783,35 @@ function change_text(param){
 		girl4.style.opacity = '0.5'
 		girl5.style.opacity = '1'
 	}
+}
+
+function onmous(param){
+
+	if (param == 'girl1' && girl4.style.opacity != '1'){
+		girl4.style.opacity = '0.9'
+	}else if(param=='girl2' && girl3.style.opacity != '1'){
+		girl3.style.opacity = '0.9'
+	}else if(param=='girl3' && girl1.style.opacity != '1'){
+		girl1.style.opacity = '0.9'
+	}else if(param=='girl4' && girl2.style.opacity != '1'){
+		girl2.style.opacity = '0.9'
+	}else if(param=='girl5' && girl5.style.opacity != '1'){
+		girl5.style.opacity = '0.9'
+	}
+}
+
+function overm(param){
+
+	if (param == 'girl1' && girl4.style.opacity != '1'){
+		girl4.style.opacity = '0.5'
+	}else if(param=='girl2' && girl3.style.opacity != '1'){
+		girl3.style.opacity = '0.5'
+	}else if(param=='girl3' && girl1.style.opacity != '1'){
+		girl1.style.opacity = '0.5'
+	}else if(param=='girl4' && girl2.style.opacity != '1'){
+		girl2.style.opacity = '0.5'
+	}else if(param=='girl5' && girl5.style.opacity != '1'){
+		girl5.style.opacity = '0.5'
+	}
+	
 }

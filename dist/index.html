@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Ukraine</title>
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="./styles/toast.min.css">
+    <link rel="stylesheet" href="./styles/critical.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <link rel="shortcut icon" href="./static/header/favicon.svg" type="image/x-icon">
+  </head>
+  <body class="overflow-hidden">
+    <div class="app">
+      <!-- BEMGO:symbol -->
+      <section class="preloader">
+        <div class="line line-top">
+          <span class="title title_line">SOS:UKRAINE</span>
+          <span class="title title_line title_yellow">SOS:UKRAINE</span>
+          <span class="title title_line">SOS:UKRAINE</span>
+          <span class="title title_line title_yellow">SOS:UKRAINE</span>
+        </div>
+        <img src="./static/header/logo.svg" alt="logo">
+        <div class="line line-bottom">
+          <span class="title title_line">SOS:UKRAINE</span>
+          <span class="title title_line title_yellow">SOS:UKRAINE</span>
+          <span class="title title_line">SOS:UKRAINE</span>
+          <span class="title title_line title_yellow">SOS:UKRAINE</span>
+        </div>
+      </section>
+      <div class="header-wrap">
+        <div class="container">
+          <header class="header">
+            <a data-menuanchor="firstPage" href="#firstPage" class="header__logo">
+              <img src="./static/header/logo.svg" alt="logo">
+            </a>
+            <div class="header__info">
+              <div class="hashtag">
+                <a href="" target="_blank" class="hashtag-item">
+                  <img src="./static/header/ua.svg" alt="ua">
+                  <p>#HELPNOW</p>
+                </a>
+                <a href="" target="_blank" class="hashtag-item">
+                  <img src="./static/header/ua.svg" alt="ua">
+                  <p>#STOPWAR</p>
+                </a>
+                <a href="" target="_blank" class="hashtag-item">
+                  <img src="./static/header/ua.svg" alt="ua">
+                  <p>#HELPUKRAINE</p>
+                </a>
+              </div>
+              <div class="social">
+                <div class="social__items">
+                  <a href="" target="_blank" class="social__icon">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_784_78)">
+                        <path d="M26 13C26 20.1793 20.1793 26 13 26C5.8207 26 0 20.1793 0 13C0 5.8207 5.8207 0 13 0C20.1808 0 26 5.8207 26 13Z" fill="#141414" />
+                        <path class="white-path" d="M6.41408 13.4368L6.47017 13.3486L9.85198 8.05819C9.90141 7.98073 10.0176 7.98874 10.055 8.07288C10.62 9.33905 11.1075 10.9138 10.8791 11.8941C10.7816 12.2975 10.5145 12.8437 10.2139 13.3486C10.1752 13.4221 10.1325 13.4942 10.0871 13.5637C10.0657 13.5957 10.0296 13.6144 9.99088 13.6144H6.51291C6.41941 13.6144 6.36466 13.5129 6.41408 13.4368Z" fill="#F4F4F4" />
+                        <path class="white-path" d="M21.4875 14.4198V15.2572C21.4875 15.3053 21.4581 15.3481 21.4154 15.3668C21.1536 15.4789 20.2574 15.8903 19.8848 16.4086C18.9338 17.7322 18.2072 19.6248 16.5831 19.6248H9.80742C7.40598 19.6248 5.45996 17.6721 5.45996 15.2626V15.1851C5.45996 15.121 5.51204 15.0689 5.57615 15.0689H9.35333C9.42811 15.0689 9.48286 15.1384 9.47621 15.2118C9.44948 15.4576 9.4949 15.7087 9.61109 15.9371C9.83547 16.3925 10.3003 16.677 10.8025 16.677H12.6724V15.2172H10.8238C10.729 15.2172 10.6729 15.1076 10.7277 15.0302C10.7477 14.9995 10.7704 14.9674 10.7945 14.9314C10.9694 14.6829 11.2192 14.2969 11.4676 13.8575C11.6372 13.561 11.8015 13.2445 11.9338 12.9266C11.9605 12.8691 11.9818 12.8104 12.0032 12.7529C12.0393 12.6514 12.0767 12.5566 12.1034 12.4618C12.1301 12.3816 12.1514 12.2975 12.1728 12.2187C12.2356 11.9489 12.2623 11.6631 12.2623 11.3666C12.2623 11.2504 12.257 11.1288 12.2463 11.0126C12.2409 10.8857 12.2249 10.7588 12.2089 10.6319C12.1982 10.5198 12.1782 10.4089 12.1568 10.2927C12.1301 10.1231 12.0927 9.9548 12.0499 9.78515L12.0353 9.72107C12.0032 9.60485 11.9765 9.49401 11.9391 9.37781C11.8336 9.01316 11.712 8.6579 11.5838 8.32533C11.5371 8.1931 11.4836 8.06622 11.4302 7.93934C11.3514 7.74834 11.2713 7.57471 11.1978 7.41042C11.1604 7.33562 11.1284 7.2675 11.0963 7.19805C11.0603 7.11924 11.0229 7.04044 10.9855 6.96566C10.9588 6.90823 10.928 6.8548 10.9066 6.80137L10.6783 6.37931C10.6462 6.32188 10.6996 6.25376 10.7624 6.27113L12.1915 6.65845H12.1955C12.1982 6.65845 12.1996 6.6598 12.2009 6.6598L12.3892 6.71188L12.5962 6.77066L12.6724 6.79201V5.94256C12.6724 5.53252 13.0009 5.19995 13.407 5.19995C13.61 5.19995 13.7943 5.28276 13.9265 5.41765C14.0587 5.55256 14.1415 5.73688 14.1415 5.94256V7.20341L14.2938 7.24612C14.3058 7.25015 14.3178 7.25549 14.3285 7.26349C14.3659 7.29155 14.4194 7.33294 14.4875 7.38372C14.5409 7.42643 14.5983 7.47854 14.6678 7.53197C14.8053 7.64281 14.9696 7.78573 15.15 7.95002C15.198 7.99142 15.2448 8.03416 15.2875 8.0769C15.5199 8.29328 15.7804 8.54704 16.0288 8.82752C16.0982 8.90633 16.1664 8.98646 16.2358 9.0706C16.3053 9.15609 16.3787 9.24022 16.4428 9.32438C16.527 9.43657 16.6178 9.55277 16.6966 9.67432C16.734 9.73175 16.7767 9.79051 16.8128 9.84794C16.9143 10.0015 17.0038 10.1605 17.0893 10.3194C17.1254 10.3929 17.1627 10.473 17.1948 10.5518C17.2896 10.7642 17.3644 10.9806 17.4125 11.1969C17.4272 11.2437 17.4379 11.2944 17.4432 11.3399V11.3505C17.4592 11.4146 17.4646 11.4827 17.4699 11.5522C17.4913 11.7739 17.4806 11.9956 17.4325 12.2187C17.4125 12.3135 17.3858 12.403 17.3537 12.4978C17.3217 12.5887 17.2896 12.6835 17.2482 12.773C17.1681 12.9586 17.0732 13.1443 16.9611 13.3179C16.925 13.382 16.8823 13.4501 16.8395 13.5143C16.7928 13.5824 16.7447 13.6465 16.7019 13.7093C16.6432 13.7894 16.5804 13.8735 16.5163 13.9483C16.4589 14.0271 16.4001 14.1059 16.336 14.1754C16.2465 14.2809 16.161 14.3811 16.0715 14.4772C16.0181 14.54 15.9607 14.6041 15.9019 14.6616C15.8445 14.7256 15.7857 14.7831 15.7323 14.8365C15.6428 14.926 15.568 14.9955 15.5052 15.0529L15.3583 15.1878C15.3369 15.2065 15.3089 15.2172 15.2795 15.2172H14.1415V16.677H15.5733C15.8939 16.677 16.1984 16.5635 16.4442 16.3551C16.5283 16.2817 16.8956 15.9638 17.3297 15.4843C17.3444 15.4683 17.3631 15.4562 17.3845 15.4509L21.3393 14.3076C21.4127 14.2862 21.4875 14.3423 21.4875 14.4198Z" fill="#F4F4F4" />
+                      </g>
+                    </svg>
+                  </a>
+                  <a href="" target="_blank" class="social__icon">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.40288 12.3579C5.4029 12.2125 5.43159 12.0685 5.4873 11.9343C5.54301 11.8 5.62464 11.6781 5.7275 11.5756C5.83036 11.473 5.95243 11.3918 6.08669 11.3367C6.22096 11.2815 6.36478 11.2534 6.50989 11.2541L8.34521 11.2601C8.63785 11.2601 8.91849 11.3766 9.12541 11.5839C9.33234 11.7912 9.44859 12.0724 9.44859 12.3656V19.3189C9.6553 19.2576 9.91984 19.1921 10.2109 19.1234C10.4126 19.0759 10.5924 18.9615 10.721 18.7988C10.8497 18.6361 10.9197 18.4346 10.9198 18.227V9.60249C10.9198 9.30929 11.036 9.02809 11.2429 8.82074C11.4498 8.6134 11.7305 8.49688 12.0231 8.49682H13.864C14.1567 8.49688 14.4373 8.6134 14.6442 8.82074C14.8512 9.02809 14.9674 9.30929 14.9674 9.60249V17.6074C14.9674 17.6074 15.4279 17.4207 15.8763 17.231C16.0429 17.1604 16.185 17.0422 16.285 16.8912C16.385 16.7402 16.4384 16.563 16.4386 16.3818V6.83875C16.4386 6.54561 16.5548 6.26446 16.7617 6.05716C16.9685 5.84985 17.2491 5.73336 17.5417 5.7333H19.3807C19.6731 5.73358 19.9535 5.85018 20.1602 6.05746C20.3669 6.26474 20.483 6.54575 20.483 6.83875V14.6971C22.0773 13.5395 23.6931 12.1471 24.9753 10.4729C25.1614 10.2299 25.2845 9.94456 25.3336 9.64229C25.3828 9.34002 25.3566 9.03025 25.2572 8.74062C24.6637 7.02978 23.7202 5.46192 22.4871 4.13737C21.2541 2.81281 19.7586 1.76074 18.0964 1.04846C16.4342 0.336183 14.6419 -0.0206084 12.8342 0.000919274C11.0265 0.0224469 9.2432 0.421818 7.59839 1.17348C5.95357 1.92514 4.48349 3.01253 3.28221 4.36607C2.08092 5.71962 1.1749 7.3095 0.622104 9.034C0.0693125 10.7585 -0.11807 12.5796 0.0719455 14.3808C0.261961 16.182 0.825192 17.9237 1.7256 19.4943C1.88247 19.7652 2.11326 19.9857 2.39086 20.1298C2.66846 20.2738 2.98133 20.3355 3.29273 20.3076C3.6406 20.277 4.07372 20.2336 4.58868 20.1731C4.81279 20.1475 5.01971 20.0403 5.17001 19.8718C5.32031 19.7033 5.4035 19.4853 5.40373 19.2593V12.3579" fill="black" />
+                      <path d="M5.36426 23.5091C7.30266 24.9219 9.59337 25.77 11.983 25.9594C14.3726 26.1488 16.7679 25.6722 18.9039 24.5824C21.04 23.4926 22.8334 21.832 24.0859 19.7843C25.3384 17.7366 26.0011 15.3818 26.0007 12.9802C26.0007 12.6797 25.9867 12.384 25.9668 12.0891C21.2194 19.183 12.4536 22.4994 5.36426 23.5091Z" fill="black" />
+                    </svg>
+                  </a>
+                  <a href="" target="_blank" class="social__icon">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.5732 13.7139C11.5732 14.758 10.8252 15.6076 9.88477 15.6076C8.95902 15.6076 8.19629 14.758 8.19629 13.7139C8.19629 12.6704 8.9443 11.8203 9.88477 11.8203C10.8323 11.8203 11.588 12.678 11.5732 13.7139Z" fill="black" />
+                      <path d="M17.8154 13.7139C17.8154 14.758 17.075 15.6076 16.127 15.6076C15.2012 15.6076 14.4385 14.758 14.4385 13.7139C14.4385 12.6704 15.1865 11.8203 16.127 11.8203C17.075 11.8203 17.8302 12.678 17.8154 13.7139Z" fill="black" />
+                      <path d="M13 0C5.82055 0 0 5.82055 0 13C0 20.1795 5.82055 26 13 26C20.1795 26 26 20.1795 26 13C26 5.82055 20.1795 0 13 0ZM22.2884 17.7861C20.6817 18.9663 19.1247 19.6828 17.5896 20.1576C17.5652 20.1652 17.5388 20.1561 17.5236 20.1353C17.1691 19.6417 16.8472 19.1212 16.5648 18.5748C16.5486 18.5428 16.5633 18.5042 16.5968 18.4915C17.1082 18.298 17.5947 18.067 18.0629 17.7937C18.1 17.7719 18.102 17.7191 18.068 17.6937C17.9689 17.6201 17.8704 17.5424 17.7765 17.4647C17.7587 17.4505 17.7348 17.4474 17.715 17.4571C14.6763 18.8612 11.3476 18.8612 8.27277 17.4571C8.25297 17.4484 8.2291 17.4515 8.21234 17.4657C8.1184 17.5429 8.01988 17.6201 7.92137 17.6937C7.88734 17.7191 7.88988 17.7719 7.92695 17.7937C8.39516 18.0619 8.88164 18.298 9.3925 18.492C9.42602 18.5047 9.44176 18.5428 9.425 18.5748C9.14926 19.1222 8.8268 19.6422 8.46574 20.1358C8.45 20.1561 8.4241 20.1652 8.39973 20.1576C6.87172 19.6828 5.31527 18.9663 3.70805 17.7861C3.69484 17.7755 3.6852 17.7592 3.68367 17.742C3.35664 14.2365 4.02391 10.6874 6.45937 7.04844C6.46547 7.03879 6.4741 7.03117 6.48477 7.02711C7.6827 6.47664 8.96695 6.07191 10.3086 5.84086C10.333 5.8373 10.3573 5.84848 10.37 5.8698C10.5361 6.16383 10.7255 6.54012 10.854 6.84785C12.2682 6.63203 13.7048 6.63203 15.1491 6.84785C15.277 6.54672 15.4598 6.16383 15.6249 5.8698C15.6376 5.84746 15.662 5.83629 15.6863 5.84086C17.029 6.07242 18.3132 6.47766 19.5107 7.02711C19.5213 7.03117 19.53 7.03879 19.535 7.04945C21.6567 10.17 22.7048 13.6901 22.3128 17.743C22.3113 17.7602 22.3026 17.7755 22.2884 17.7861Z" fill="black" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="main-menu-wrap">
+              <div class="container">
+                <a data-menuanchor="firstPage" href="#firstPage" class="header__logo header__logo_menu">
+                  <img src="./static/header/logo.svg" alt="logo">
+                </a>
+                <ul class="main-menu">
+                  <li><a data-menuanchor="firstPage" href="#firstPage" class="title title_menu title_white">MINT</a></li>
+                  <li><a data-menuanchor="secondPage" href="#secondPage" class="title title_menu title_white">About</a></li>
+                  <li><a data-menuanchor="thirdPage" href="#thirdPage" class="title title_menu title_white">we are Ukrainians</a></li>
+                  <li><a data-menuanchor="fourthPage" href="#fourthPage" class="title title_menu title_white">GALLERY</a></li>
+                </ul>
+                <div class="social social_menu">
+                  <div class="social__title"> Social networks </div>
+                  <div class="social__items">
+                    <a href="" target="_blank" class="social__icon">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_784_78)">
+                          <path d="M26 13C26 20.1793 20.1793 26 13 26C5.8207 26 0 20.1793 0 13C0 5.8207 5.8207 0 13 0C20.1808 0 26 5.8207 26 13Z" fill="#141414" />
+                          <path class="white-path" d="M6.41408 13.4368L6.47017 13.3486L9.85198 8.05819C9.90141 7.98073 10.0176 7.98874 10.055 8.07288C10.62 9.33905 11.1075 10.9138 10.8791 11.8941C10.7816 12.2975 10.5145 12.8437 10.2139 13.3486C10.1752 13.4221 10.1325 13.4942 10.0871 13.5637C10.0657 13.5957 10.0296 13.6144 9.99088 13.6144H6.51291C6.41941 13.6144 6.36466 13.5129 6.41408 13.4368Z" fill="#F4F4F4" />
+                          <path class="white-path" d="M21.4875 14.4198V15.2572C21.4875 15.3053 21.4581 15.3481 21.4154 15.3668C21.1536 15.4789 20.2574 15.8903 19.8848 16.4086C18.9338 17.7322 18.2072 19.6248 16.5831 19.6248H9.80742C7.40598 19.6248 5.45996 17.6721 5.45996 15.2626V15.1851C5.45996 15.121 5.51204 15.0689 5.57615 15.0689H9.35333C9.42811 15.0689 9.48286 15.1384 9.47621 15.2118C9.44948 15.4576 9.4949 15.7087 9.61109 15.9371C9.83547 16.3925 10.3003 16.677 10.8025 16.677H12.6724V15.2172H10.8238C10.729 15.2172 10.6729 15.1076 10.7277 15.0302C10.7477 14.9995 10.7704 14.9674 10.7945 14.9314C10.9694 14.6829 11.2192 14.2969 11.4676 13.8575C11.6372 13.561 11.8015 13.2445 11.9338 12.9266C11.9605 12.8691 11.9818 12.8104 12.0032 12.7529C12.0393 12.6514 12.0767 12.5566 12.1034 12.4618C12.1301 12.3816 12.1514 12.2975 12.1728 12.2187C12.2356 11.9489 12.2623 11.6631 12.2623 11.3666C12.2623 11.2504 12.257 11.1288 12.2463 11.0126C12.2409 10.8857 12.2249 10.7588 12.2089 10.6319C12.1982 10.5198 12.1782 10.4089 12.1568 10.2927C12.1301 10.1231 12.0927 9.9548 12.0499 9.78515L12.0353 9.72107C12.0032 9.60485 11.9765 9.49401 11.9391 9.37781C11.8336 9.01316 11.712 8.6579 11.5838 8.32533C11.5371 8.1931 11.4836 8.06622 11.4302 7.93934C11.3514 7.74834 11.2713 7.57471 11.1978 7.41042C11.1604 7.33562 11.1284 7.2675 11.0963 7.19805C11.0603 7.11924 11.0229 7.04044 10.9855 6.96566C10.9588 6.90823 10.928 6.8548 10.9066 6.80137L10.6783 6.37931C10.6462 6.32188 10.6996 6.25376 10.7624 6.27113L12.1915 6.65845H12.1955C12.1982 6.65845 12.1996 6.6598 12.2009 6.6598L12.3892 6.71188L12.5962 6.77066L12.6724 6.79201V5.94256C12.6724 5.53252 13.0009 5.19995 13.407 5.19995C13.61 5.19995 13.7943 5.28276 13.9265 5.41765C14.0587 5.55256 14.1415 5.73688 14.1415 5.94256V7.20341L14.2938 7.24612C14.3058 7.25015 14.3178 7.25549 14.3285 7.26349C14.3659 7.29155 14.4194 7.33294 14.4875 7.38372C14.5409 7.42643 14.5983 7.47854 14.6678 7.53197C14.8053 7.64281 14.9696 7.78573 15.15 7.95002C15.198 7.99142 15.2448 8.03416 15.2875 8.0769C15.5199 8.29328 15.7804 8.54704 16.0288 8.82752C16.0982 8.90633 16.1664 8.98646 16.2358 9.0706C16.3053 9.15609 16.3787 9.24022 16.4428 9.32438C16.527 9.43657 16.6178 9.55277 16.6966 9.67432C16.734 9.73175 16.7767 9.79051 16.8128 9.84794C16.9143 10.0015 17.0038 10.1605 17.0893 10.3194C17.1254 10.3929 17.1627 10.473 17.1948 10.5518C17.2896 10.7642 17.3644 10.9806 17.4125 11.1969C17.4272 11.2437 17.4379 11.2944 17.4432 11.3399V11.3505C17.4592 11.4146 17.4646 11.4827 17.4699 11.5522C17.4913 11.7739 17.4806 11.9956 17.4325 12.2187C17.4125 12.3135 17.3858 12.403 17.3537 12.4978C17.3217 12.5887 17.2896 12.6835 17.2482 12.773C17.1681 12.9586 17.0732 13.1443 16.9611 13.3179C16.925 13.382 16.8823 13.4501 16.8395 13.5143C16.7928 13.5824 16.7447 13.6465 16.7019 13.7093C16.6432 13.7894 16.5804 13.8735 16.5163 13.9483C16.4589 14.0271 16.4001 14.1059 16.336 14.1754C16.2465 14.2809 16.161 14.3811 16.0715 14.4772C16.0181 14.54 15.9607 14.6041 15.9019 14.6616C15.8445 14.7256 15.7857 14.7831 15.7323 14.8365C15.6428 14.926 15.568 14.9955 15.5052 15.0529L15.3583 15.1878C15.3369 15.2065 15.3089 15.2172 15.2795 15.2172H14.1415V16.677H15.5733C15.8939 16.677 16.1984 16.5635 16.4442 16.3551C16.5283 16.2817 16.8956 15.9638 17.3297 15.4843C17.3444 15.4683 17.3631 15.4562 17.3845 15.4509L21.3393 14.3076C21.4127 14.2862 21.4875 14.3423 21.4875 14.4198Z" fill="#F4F4F4" />
+                        </g>
+                      </svg>
+                    </a>
+                    <a href="" target="_blank" class="social__icon">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.40288 12.3579C5.4029 12.2125 5.43159 12.0685 5.4873 11.9343C5.54301 11.8 5.62464 11.6781 5.7275 11.5756C5.83036 11.473 5.95243 11.3918 6.08669 11.3367C6.22096 11.2815 6.36478 11.2534 6.50989 11.2541L8.34521 11.2601C8.63785 11.2601 8.91849 11.3766 9.12541 11.5839C9.33234 11.7912 9.44859 12.0724 9.44859 12.3656V19.3189C9.6553 19.2576 9.91984 19.1921 10.2109 19.1234C10.4126 19.0759 10.5924 18.9615 10.721 18.7988C10.8497 18.6361 10.9197 18.4346 10.9198 18.227V9.60249C10.9198 9.30929 11.036 9.02809 11.2429 8.82074C11.4498 8.6134 11.7305 8.49688 12.0231 8.49682H13.864C14.1567 8.49688 14.4373 8.6134 14.6442 8.82074C14.8512 9.02809 14.9674 9.30929 14.9674 9.60249V17.6074C14.9674 17.6074 15.4279 17.4207 15.8763 17.231C16.0429 17.1604 16.185 17.0422 16.285 16.8912C16.385 16.7402 16.4384 16.563 16.4386 16.3818V6.83875C16.4386 6.54561 16.5548 6.26446 16.7617 6.05716C16.9685 5.84985 17.2491 5.73336 17.5417 5.7333H19.3807C19.6731 5.73358 19.9535 5.85018 20.1602 6.05746C20.3669 6.26474 20.483 6.54575 20.483 6.83875V14.6971C22.0773 13.5395 23.6931 12.1471 24.9753 10.4729C25.1614 10.2299 25.2845 9.94456 25.3336 9.64229C25.3828 9.34002 25.3566 9.03025 25.2572 8.74062C24.6637 7.02978 23.7202 5.46192 22.4871 4.13737C21.2541 2.81281 19.7586 1.76074 18.0964 1.04846C16.4342 0.336183 14.6419 -0.0206084 12.8342 0.000919274C11.0265 0.0224469 9.2432 0.421818 7.59839 1.17348C5.95357 1.92514 4.48349 3.01253 3.28221 4.36607C2.08092 5.71962 1.1749 7.3095 0.622104 9.034C0.0693125 10.7585 -0.11807 12.5796 0.0719455 14.3808C0.261961 16.182 0.825192 17.9237 1.7256 19.4943C1.88247 19.7652 2.11326 19.9857 2.39086 20.1298C2.66846 20.2738 2.98133 20.3355 3.29273 20.3076C3.6406 20.277 4.07372 20.2336 4.58868 20.1731C4.81279 20.1475 5.01971 20.0403 5.17001 19.8718C5.32031 19.7033 5.4035 19.4853 5.40373 19.2593V12.3579" fill="black" />
+                        <path d="M5.36426 23.5091C7.30266 24.9219 9.59337 25.77 11.983 25.9594C14.3726 26.1488 16.7679 25.6722 18.9039 24.5824C21.04 23.4926 22.8334 21.832 24.0859 19.7843C25.3384 17.7366 26.0011 15.3818 26.0007 12.9802C26.0007 12.6797 25.9867 12.384 25.9668 12.0891C21.2194 19.183 12.4536 22.4994 5.36426 23.5091Z" fill="black" />
+                      </svg>
+                    </a>
+                    <a href="" target="_blank" class="social__icon">
+                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5732 13.7139C11.5732 14.758 10.8252 15.6076 9.88477 15.6076C8.95902 15.6076 8.19629 14.758 8.19629 13.7139C8.19629 12.6704 8.9443 11.8203 9.88477 11.8203C10.8323 11.8203 11.588 12.678 11.5732 13.7139Z" fill="black" />
+                        <path d="M17.8154 13.7139C17.8154 14.758 17.075 15.6076 16.127 15.6076C15.2012 15.6076 14.4385 14.758 14.4385 13.7139C14.4385 12.6704 15.1865 11.8203 16.127 11.8203C17.075 11.8203 17.8302 12.678 17.8154 13.7139Z" fill="black" />
+                        <path d="M13 0C5.82055 0 0 5.82055 0 13C0 20.1795 5.82055 26 13 26C20.1795 26 26 20.1795 26 13C26 5.82055 20.1795 0 13 0ZM22.2884 17.7861C20.6817 18.9663 19.1247 19.6828 17.5896 20.1576C17.5652 20.1652 17.5388 20.1561 17.5236 20.1353C17.1691 19.6417 16.8472 19.1212 16.5648 18.5748C16.5486 18.5428 16.5633 18.5042 16.5968 18.4915C17.1082 18.298 17.5947 18.067 18.0629 17.7937C18.1 17.7719 18.102 17.7191 18.068 17.6937C17.9689 17.6201 17.8704 17.5424 17.7765 17.4647C17.7587 17.4505 17.7348 17.4474 17.715 17.4571C14.6763 18.8612 11.3476 18.8612 8.27277 17.4571C8.25297 17.4484 8.2291 17.4515 8.21234 17.4657C8.1184 17.5429 8.01988 17.6201 7.92137 17.6937C7.88734 17.7191 7.88988 17.7719 7.92695 17.7937C8.39516 18.0619 8.88164 18.298 9.3925 18.492C9.42602 18.5047 9.44176 18.5428 9.425 18.5748C9.14926 19.1222 8.8268 19.6422 8.46574 20.1358C8.45 20.1561 8.4241 20.1652 8.39973 20.1576C6.87172 19.6828 5.31527 18.9663 3.70805 17.7861C3.69484 17.7755 3.6852 17.7592 3.68367 17.742C3.35664 14.2365 4.02391 10.6874 6.45937 7.04844C6.46547 7.03879 6.4741 7.03117 6.48477 7.02711C7.6827 6.47664 8.96695 6.07191 10.3086 5.84086C10.333 5.8373 10.3573 5.84848 10.37 5.8698C10.5361 6.16383 10.7255 6.54012 10.854 6.84785C12.2682 6.63203 13.7048 6.63203 15.1491 6.84785C15.277 6.54672 15.4598 6.16383 15.6249 5.8698C15.6376 5.84746 15.662 5.83629 15.6863 5.84086C17.029 6.07242 18.3132 6.47766 19.5107 7.02711C19.5213 7.03117 19.53 7.03879 19.535 7.04945C21.6567 10.17 22.7048 13.6901 22.3128 17.743C22.3113 17.7602 22.3026 17.7755 22.2884 17.7861Z" fill="black" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="tog-nav">
+              <span></span>
+              <span></span>
+            </span>
+          </header>
+        </div>
+      </div>
+      <div class="scroll-wrap" id="scroll-bottom-btn">
+        <a data-menuanchor="secondPage" href="#secondPage" class="scroll-bottom">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <g clip-path="url(#clip0_1049_50)">
+              <path d="M0.398923 3.83852L0.398937 3.8385C0.797333 3.44011 1.44344 3.44008 1.84207 3.83852L7.92924 9.92605L7.99995 9.99676L8.07067 9.92605L14.1579 3.83873C14.5565 3.44029 15.2025 3.44032 15.6009 3.83871L15.6009 3.83875C15.9996 4.23714 15.9997 4.88333 15.6009 5.28192L15.6009 5.28194L8.72136 12.1616C8.72136 12.1616 8.72135 12.1616 8.72134 12.1616C8.52213 12.3607 8.26119 12.4601 7.99996 12.4601C7.73865 12.4601 7.47769 12.3604 7.27856 12.1614L0.398937 5.28172C0.000346418 4.88313 0.000367015 4.23691 0.398923 3.83852Z" fill="white" stroke="#151513" stroke-width="0.2" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1049_50">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+      <div class="lines">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <main class="content" id="fullpage">
+        <!-- intro -->
+        <section id="intro" class="section intro-section fp-auto-height">
+          <div class="container">
+            <div class="intro section__content">
+              <div class="intro__info">
+                <div class="intro__info-top">
+                  <div class="intro__title title title_big">
+                    <h2> Crypto <span class="title_white">will</span><br>
+                      <span class="title_white">stand with</span><br> ukraine </h2>
+                  </div>
+                  <div class="intro__desc">
+                    <a href="" class="btn intro__btn">
+                      <span>MINT</span>
+                    </a>
+                    <div class="intro__text"> By minting an nfts smart contract that we ware developed will automaticly send recived money direct to official eth adress ukranian govermence </div>
+                  </div>
+                </div>
+              </div>
+              <div class="intro__images">
+                <div class="intro__img intro__img_bg">
+                  <picture>
+                    <source srcset="./static/intro/intro-bg.png" media="(min-width: 1024px)">
+                    <img src="./static/intro/intro-bg-mob.png" alt="logo" />
+                  </picture>
+                </div>
+                <div class="intro__img intro__img_girls">
+                  <img src="./static/intro/intro-girls.png" alt="logo">
+                </div>
+              </div>
+            </div>
+            <!--line-->
+            <div class="bottom-line-wrap">
+              <div class="swiper bottom-line marquee-wrap-intro">
+                <div class="swiper-wrapper">
+                  <span class="swiper-slide title title_line">SOS:UKRAINE</span>
+                  <span class="swiper-slide title title_line title_yellow">SOS:UKRAINE</span>
+                  <span class="swiper-slide title title_line">SOS:UKRAINE</span>
+                  <span class="swiper-slide title title_line title_yellow">SOS:UKRAINE</span>
+                  <span class="swiper-slide title title_line">SOS:UKRAINE</span>
+                  <span class="swiper-slide title title_line title_yellow">SOS:UKRAINE</span>
+                  <span class="swiper-slide title title_line">SOS:UKRAINE</span>
+                  <span class="swiper-slide title title_line title_yellow">SOS:UKRAINE</span>
+                  <span class="swiper-slide title title_line">SOS:UKRAINE</span>
+                  <span class="swiper-slide title title_line title_yellow">SOS:UKRAINE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- donate -->
+        <section id="second-page" class="section donate-section fp-auto-height">
+          <div class="container">
+            <div class="donate section__content">
+              <div class="donate__dots-bg donate__dots-bg_1">
+                <img src="./static/donate/dots-bg.png" alt="bg">
+              </div>
+              <div class="donate__dots-bg donate__dots-bg_2">
+                <img src="./static/donate/dots-bg.png" alt="bg">
+              </div>
+              <!-- Slider main container -->
+              <div class="swiper donate-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="donate-card-wrap">
+                      <div class="donate-card">
+                        <div class="donate-card__img">
+                          <img src="./static/donate/donate-woman.png" alt="logo">
+                        </div>
+                        <div class="donate-card__info">
+                          <div class="donate-card__top">
+                            <div class="donate-card__part">
+                              <div class="donate-card__title"> Amount </div>
+                              <div class="donate-card-amount amount-block">
+                                <button id="decrease" class="donate-card__btn" style="opacity: 0.4;">-</button>
+                                <input value="1" readonly="" id="amountValue" class="number">
+                                <button id="increase" class="donate-card__btn">+</button>
+                              </div>
+                            </div>
+                            <div class="donate-card__part">
+                              <div class="donate-card__title"> Available </div>
+                              <div class="donate-card__available number">
+                                <span id="amount_of_sum_mint">555</span> / <em>10000</em>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="donate-card__bottom">
+                            <div class="donate-card__part">
+                              <div class="donate-card__title"> Total </div>
+                              <div class="donate-card__total number">
+                                <span id="amountPrice"></span> ETH </div>
+                            </div>
+                            <div class="donate-card__part">
+                              <a onclick="choser()" class="btn donate-card__donate-btn">
+                                <span>DONATE</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="donate-slider__content">
+                      <div class="donate-slider__text">
+                        <p>The total issue is 10,000 NFTs. Each token is a completely unique and self-sufficient illustration of the main goal of what is happening - People. People who are trying with all their might to bring peace into their lives, to return their homes and loved ones.</p>
+                        <p>The collection is generative and consists of 8 attributes, each of which has an average of 15 display options</p>
+                        <img src="./static/donate/dots-mob.png" alt="dots" class="donate-slider__text-dots">
+                      </div>
+                      <div class="donate-slider__img">
+                        <img src="./static/donate/donate-m-1.png" alt="people">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="donate-slider__content">
+                      <div class="donate-slider__text">
+                        <h3>SOS: Ukrainian medic #1245</h3>
+                        <ul>
+                          <li><b>Background</b> - Block</li>
+                          <li><b>Clothes</b> - Windbreaker</li>
+                          <li><b>Face</b> - Patriotic mask</li>
+                          <li><b>Headstyle</b> - Strict hairstyle</li>
+                          <li><b>In hands</b> - Ukrainian love</li>
+                          <li><b>Patch</b> - No</li>
+                        </ul>
+                      </div>
+                      <div class="donate-slider__img">
+                        <img src="./static/donate/donate-m-2.png" alt="people">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="donate__bg-wrap">
+                <img src="./static/donate/donate-bg.png" alt="bg" class="donate__bg">
+                <div class="donate__peoples-wrap">
+                  <div class="donate__text">
+                    <img src="./static/donate/dots.png" alt="dots" class="donate__dots">
+                    <p>The total issue is 10,000 NFTs. Each token is a completely unique and self-sufficient illustration of the main goal of what is happening - People. People who are trying with all their might to bring peace into their lives, to return their homes and loved ones.</p>
+                    <p>The collection is generative and consists of 8 attributes, each of which has an average of 15 display options</p>
+                  </div>
+                  <img src="./static/donate/girl1.svg" alt="dots" id="girl1" class="donate__peoples">
+                  <img src="./static/donate/girl2.svg" alt="dots" id="girl2" class="donate__peoples">
+                  <img src="./static/donate/girl3.svg" alt="dots" id="girl3" class="donate__peoples">
+                  <img src="./static/donate/girl4.svg" alt="dots" id="girl4" class="donate__peoples">
+                  <img src="./static/donate/girl5.svg" alt="dots" id="girl5" class="donate__peoples">
+                </div>
+              </div>
+              <!--show slider arrow-->
+              <div class="scroll-bottom scroll-bottom_mob scroll-bottom_rotate slider-arrow slider-show-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_1049_50)">
+                    <path d="M0.398923 3.83852L0.398937 3.8385C0.797333 3.44011 1.44344 3.44008 1.84207 3.83852L7.92924 9.92605L7.99995 9.99676L8.07067 9.92605L14.1579 3.83873C14.5565 3.44029 15.2025 3.44032 15.6009 3.83871L15.6009 3.83875C15.9996 4.23714 15.9997 4.88333 15.6009 5.28192L15.6009 5.28194L8.72136 12.1616C8.72136 12.1616 8.72135 12.1616 8.72134 12.1616C8.52213 12.3607 8.26119 12.4601 7.99996 12.4601C7.73865 12.4601 7.47769 12.3604 7.27856 12.1614L0.398937 5.28172C0.000346418 4.88313 0.000367015 4.23691 0.398923 3.83852Z" fill="white" stroke="#151513" stroke-width="0.2" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1049_50">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ukrainians -->
+        <section id="third-page" class="section ukrainians-section fp-auto-height">
+          <div class="container">
+            <div class="ukrainians__title title title_big"> we are <span class="title_white">Ukrainians</span>
+            </div>
+            <div class="ukrainians section__content">
+              <div class="ukrainians__info">
+                <div class="ukrainians__img">
+                  <img src="./static/ukrainians/ukrainians-1.png" alt="bg">
+                </div>
+                <div class="ukrainians__text">
+                  <h4>We know and understand </h4>
+                  <p>We know and understand firsthand how important and necessary sometimes the cohesion of society is. People from all over the world have united around our beautiful country, which, last but not least, helps us to hold our positions and not lose heart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="third-page2" class="section ukrainians-section fp-auto-height">
+          <div class="ukrainians__dots ukrainians__dots_1">
+            <img src="./static/donate/dots-bg.png" alt="bg">
+          </div>
+          <div class="container">
+            <div class="ukrainians section__content">
+              <div class="ukrainians__info">
+                <div class="ukrainians__img">
+                  <img src="./static/ukrainians/ukrainians-2.png" alt="bg">
+                </div>
+                <div class="ukrainians__text">
+                  <p>We are a team of crypto-enthusiasts / developers, We are part of a very powerful and influential community, knowing this, we have developed a tool with which this community can influence a real incident and show itself in offline life.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- gallery -->
+        <section id="fourth-page" class="section gallery-section fp-auto-height">
+          <div class="gallery section__content">
+            <div class="container">
+              <div class="gallery__title title title_big">
+                <h2>Gallery</h2>
+              </div>
+            </div>
+            <div class="gallery__marquees">
+              <div class="swiper gallery-slider gallery-slider_left">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-4.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-1.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-8.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-11.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-3.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-7.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-10.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-5.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-2.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-9.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-6.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-12.png" alt="people">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper gallery-slider gallery-slider_right">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-7.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-10.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-12.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-5.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-9.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-6.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-8.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-1.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-3.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-4.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-2.png" alt="people">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/gallery/img-11.png" alt="people">
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-line">
+                <div class="gallery-line__part">
+                  <span class="title title_line">scroll</span>
+                  <span class="title title_line title_yellow">scroll</span>
+                  <span class="title title_line">scroll</span>
+                </div>
+                <div class="gallery-line__part">
+                  <span class="title title_line title_yellow">scroll</span>
+                  <span class="title title_line">scroll</span>
+                  <span class="title title_line title_yellow">scroll</span>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__bottom"> © 2022 SOS:UKRAINE. All Rights Reserved. </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/swiper.js"></script>
+    <script src="./scripts/donate.js"></script>
+    <script src="./scripts/ethers.js"></script>
+    <script src="./scripts/mint.js"></script>
+    <script src="./scripts/toast.min.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

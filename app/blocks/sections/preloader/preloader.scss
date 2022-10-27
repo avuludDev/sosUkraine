@@ -1,0 +1,78 @@
+.overflow-hidden {
+	overflow: hidden;
+	#fullpage {
+		display: none;
+	}
+}
+.preloader {
+	width: 100%;
+	height: 100vh;
+	padding: 0 1.5rem;
+	background-color: var(--main-bg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	overflow: hidden;
+	z-index: 100;
+	transition: opacity .5s linear;
+	opacity: 1;
+	box-sizing: border-box;
+	&.hide {
+		opacity: 0;
+	}
+}
+
+.preloader img {
+	width: 100%;
+	max-width: 60rem;
+	animation: scaleToggle 1.5s linear infinite alternate-reverse;
+
+	@media (max-width: 767px){
+		max-width: 46rem;
+	}
+
+	@media (max-width: 425px){
+		max-width: 75%;
+	}
+}
+.preloader .line {
+	position: absolute;
+	font-family: 'PlusJakartaSans-ExtraBold';
+	background-color: var(--primary);
+	font-weight: 800;
+	font-size: 4.3rem;
+	padding: 2rem;
+	color: #000;
+	transform: rotate(-15deg);
+	white-space: nowrap;
+}
+.preloader .line-top {
+	top: -50rem;
+	left: -16rem;
+	transition: top 1s linear;
+}
+
+.preloader .line-bottom {
+	bottom: -50rem;
+	right: -31rem;
+	transform: rotate(-15deg);
+	transition: bottom 1s linear;
+}
+
+.preloader .title {
+	font-size: 4.3rem;
+	margin-right: 1.5rem;
+	@media (max-width: 767px){
+		font-size: 4rem;
+	}
+}
+
+@keyframes scaleToggle {
+	0% {
+		transform: scale(0.6);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

@@ -731,17 +731,42 @@ function change_text(param){
 	if (param == 'g1'){
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl1']
+		girl1.style.opacity = '1'
+		girl2.style.opacity = '0.5'
+		girl3.style.opacity = '0.5'
+		girl4.style.opacity = '0.5'
+		girl5.style.opacity = '0.5'
 	}else if(param=='g2'){
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl2']
+		girl1.style.opacity = '0.5'
+		girl2.style.opacity = '1'
+		girl3.style.opacity = '0.5'
+		girl4.style.opacity = '0.5'
+		girl5.style.opacity = '0.5'
 	}else if(param=='g3'){
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl3']
+		girl1.style.opacity = '0.5'
+		girl2.style.opacity = '0.5'
+		girl3.style.opacity = '1'
+		girl4.style.opacity = '0.5'
+		girl5.style.opacity = '0.5'
 	}else if(param=='g4'){
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl4']
+		girl1.style.opacity = '0.5'
+		girl2.style.opacity = '0.5'
+		girl3.style.opacity = '0.5'
+		girl4.style.opacity = '1'
+		girl5.style.opacity = '0.5'
 	}else if(param=='g5'){
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl5']
+		girl1.style.opacity = '0.5'
+		girl2.style.opacity = '0.5'
+		girl3.style.opacity = '0.5'
+		girl4.style.opacity = '0.5'
+		girl5.style.opacity = '1'
 	}
 }

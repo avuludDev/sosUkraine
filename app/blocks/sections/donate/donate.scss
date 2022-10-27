@@ -362,6 +362,21 @@
 	}
 }
 
+.div-layer{
+	width: 100%;
+	height: 200px;
+	opacity: 0;
+	display: flex;
+	z-index: 6;
+}
+
+.div-layer:hover > #girl3{
+	opacity: 1;
+}
+.donate__peoples:hover{
+	opacity: 1;
+}
+
 #girl4{
 	position: absolute;
 	width: 164px;
@@ -369,6 +384,7 @@
 	left: 15px;
 	top: 130px;
 	z-index: 2;
+	opacity: 0.5;
 }
 
 #girl3{
@@ -378,6 +394,7 @@
 	left: 50px;
 	top: 75px;
 	z-index: 3;
+	opacity: 0.5;
 }
 
 #girl1{
@@ -387,6 +404,7 @@
 	left: 170px;
 	top: 75px;
 	z-index: 5;
+	opacity: 1;
 }
 #girl2{
 	position: absolute;
@@ -395,6 +413,7 @@
 	left: 400px;
 	top: 50px;
 	z-index: 4;
+	opacity: 0.5;
 }
 
 #girl5{
@@ -404,4 +423,5 @@
 	left: 580px;
 	top: 80px;
 	z-index: 1;
+	opacity: 0.5;
 }

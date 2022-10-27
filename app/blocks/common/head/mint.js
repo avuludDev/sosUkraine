@@ -721,6 +721,8 @@ girl5 = document.getElementById('girl5')
 
 curent = 'girl1'
 
+dots = document.getElementById('dots')
+
 g1 = document.getElementById('g1')
 g2 = document.getElementById('g2')
 g3 = document.getElementById('g3')
@@ -741,6 +743,7 @@ function change_text(param){
 		curent = 'girl1'
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl1']
+		dots.style.transform = 'translateX(-72px)'
 		girl1.style.opacity = '1'
 		girl2.style.opacity = '0.5'
 		girl3.style.opacity = '0.5'
@@ -751,6 +754,7 @@ function change_text(param){
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl2']
 		girl1.style.opacity = '0.5'
+		dots.style.transform = ' translateX(89px)'
 		girl2.style.opacity = '1'
 		girl3.style.opacity = '0.5'
 		girl4.style.opacity = '0.5'
@@ -759,6 +763,7 @@ function change_text(param){
 		curent = 'girl3'
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl3']
+		dots.style.transform = 'translateX(-292px)'
 		girl1.style.opacity = '0.5'
 		girl2.style.opacity = '0.5'
 		girl3.style.opacity = '1'
@@ -768,6 +773,7 @@ function change_text(param){
 		curent = 'girl4'
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl4']
+		dots.style.transform = 'translateX(-384px)'
 		girl1.style.opacity = '0.5'
 		girl2.style.opacity = '0.5'
 		girl3.style.opacity = '0.5'
@@ -777,6 +783,7 @@ function change_text(param){
 		curent = 'girl5'
 		text_of_bot.innerHTML = ''
 		text_of_top.innerHTML = words['girl5']
+		dots.style.transform = 'translateX(120px) rotateY(180deg)'
 		girl1.style.opacity = '0.5'
 		girl2.style.opacity = '0.5'
 		girl3.style.opacity = '0.5'
@@ -816,4 +823,3 @@ function overm(param){
 	
 }
 
-change_text('g1');

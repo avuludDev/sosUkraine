@@ -1,4 +1,8 @@
-.fp-viewing-firstPage {
+.fp-viewing-firstPage,
+.fp-viewing-thirdPage,
+.fp-viewing-secondPage,
+.fp-viewing-fourthPage,
+.fp-viewing-thirdPage2{
 	.hashtag {
 		display: flex;
 		@media (max-width: 1023px) {
@@ -27,6 +31,13 @@
 }
 
 .header {
+	border-top: 85px solid #fff;
+	margin-top: -85px;
+	border-left: 310px solid #fff;
+	margin-left: -310px;
+	border-right: 310px solid #fff;
+	margin-right: -310px;
+	background-color: white;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -46,6 +57,7 @@
 	}
 
 	&__logo {
+		background-color: white;
 		max-width: 16rem;
 		&_menu {
 			margin-bottom: 5rem;

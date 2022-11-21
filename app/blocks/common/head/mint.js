@@ -577,6 +577,8 @@ const abi = [
 		"type": "function"
 	}
 ]
+
+
 const providersam = new ethers.providers.Web3Provider(window.ethereum);
 const signerforam = providersam.getSigner();
 const contracts = ethers.ContractFactory.getContract(
@@ -597,12 +599,9 @@ ch()
             async function ConnectAcount(){
                 if (window.ethereum){
                     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-					//Mint();
-					
 					return accounts
 				}
             }
-			
 			const swichNetwork = async (chainId) => {
 				const currentChainId = 0
 				if (currentChainId !== chainId) {
@@ -617,7 +616,6 @@ ch()
 				  }
 				}
 			  }
-			
 			function handleAccountsChanged(accounts) {
 				if (accounts.length === 0) {
 					ConnectAcount();
@@ -628,7 +626,6 @@ ch()
 					Mint();
 				}
 			}
-			  
             function choser(){
                 handleAccountsChanged(ConnectAcount());
             }
@@ -661,6 +658,27 @@ function sucsess_mint(thxpage){
 function denied_mint(errmessage){
     console.log('error: ', errmessage);
 }
+
+function sleep(miliseconds) {
+	var currentTime = new Date().getTime();
+	while (currentTime + miliseconds >= new Date().getTime()) {
+	}
+ }
+
+ let images = ['static/donate/1.jpg', 'static/donate/2.jpg', 'static/donate/3.jpg', 'static/donate/4.jpg', 'static/donate/5.jpg'];
+
+ let index = 0;
+ const imgElement = document.getElementById('gif_to_mint')
+ 
+ function change() {
+	imgElement.src = images[index];
+	index > 1 ? index = 0 : index++;
+ }
+ 
+ window.onload = function () {
+	 setInterval(change, 1000);
+ };
+
 
 function pop_up(arg){
 	if (arg == 'True'){

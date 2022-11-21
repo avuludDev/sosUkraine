@@ -31,18 +31,20 @@
 }
 
 .header {
-	border-top: 85px solid #fff;
+	border-top: 85px solid #f4f4f4;
 	margin-top: -85px;
-	border-left: 310px solid #fff;
+	border-left: 310px solid #f4f4f4;
 	margin-left: -310px;
-	border-right: 310px solid #fff;
+	border-right: 310px solid #f4f4f4;
 	margin-right: -310px;
-	background-color: white;
+	background-color: #f4f4f4;
 	display: flex;
+	height: 126px;
+	
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
-
+	
 	&-wrap {
 		position: absolute;
 		top: 5rem;
@@ -59,6 +61,7 @@
 	&__logo {
 		background-color: white;
 		max-width: 16rem;
+		margin-top: -63px;
 		&_menu {
 			margin-bottom: 5rem;
 		}
@@ -76,6 +79,7 @@
 
 //hashtags
 .hashtag {
+	margin-top: -63px;
 	display: none;
 	justify-content: center;
 	align-items: center;
@@ -110,6 +114,7 @@
 
 //social
 .social {
+	margin-top: -63px;
 	display: none;
 	align-items: center;
 
